@@ -1,0 +1,13 @@
+
+header{
+  height:400px;
+  width:100%;
+  /* background-color: chocolate; */
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: #be631d;
+background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+
+
+}

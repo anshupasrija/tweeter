@@ -1,0 +1,33 @@
+.tweet-label{
+  font-size:2rem;
+ 
+}
+
+#tweet-text{
+   background-color: #f4f1ec; 
+   border:none; 
+   outline:none; 
+   width: 40%;
+   height:3.5vh;
+  
+  
+   
+}
+.form-underline {  
+  margin: 6px;
+  height:3px;
+ background-color: black;
+}
+
+.form-button{
+  color:white;
+  background-color: rgb(57, 57, 133);
+   height:3rem;
+   font-family: 'Bungee', cursive;
+   padding:8px;
+   font-size:1rem;
+}
+.counter{
+  font-family: 'Bungee', cursive;
+}
+
