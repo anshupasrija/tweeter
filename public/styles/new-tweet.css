@@ -1,33 +1,110 @@
-.tweet-label{
-  font-size:2rem;
- 
+#tweet-text {
+  resize: none;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #5e6572;
+  width: 90%;
+  background-color: transparent;
 }
-
-#tweet-text{
-   background-color: #f4f1ec; 
-   border:none; 
-   outline:none; 
-   width: 40%;
-   height:3.5vh;
-  
-  
-   
-}
-.form-underline {  
-  margin: 6px;
-  height:3px;
- background-color: black;
-}
-
-.form-button{
-  color:white;
+.form-button {
+  color: white;
   background-color: rgb(57, 57, 133);
-   height:3rem;
-   font-family: 'Bungee', cursive;
-   padding:8px;
-   font-size:1rem;
+  height: 3rem;
+  font-family: "Bungee", cursive;
+  padding: 8px;
+  font-size: 1rem;
 }
-.counter{
-  font-family: 'Bungee', cursive;
+.counter {
+  font-family: "Bungee", cursive;
 }
 
+.form-tweet {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+#new-tweet {
+  /* display: block; */
+  width: 100%;
+  justify-content: center;
+  background-color: #f4f1ec;
+}
+.form {
+  width: 90%;
+  margin-top: 2px;
+}
+.tweet-label {
+  font-size: 2rem;
+}
+
+.article-container {
+  /* display: block; */
+  background-color: #f4f1ec;
+  margin: 1rem;
+  border: 2px solid black;
+}
+
+.article-header {
+  height: 10vh;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-icon {
+  width: 30px;
+  height: 30px;
+}
+.article-footer {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: 5px solid #5e6572;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0 10px 0 10px;
+}
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer-text {
+  margin: 0;
+}
+.footer-icon {
+  margin-left: 5px;
+}
+
+.article-header-subcontainer {
+  display: flex;
+}
+.article-logo {
+  margin-right: 2rem;
+}
+.article-paragraph {
+  margin: 1rem;
+}
+.footer-right div.footer-icon:hover {
+  color: rgb(255, 166, 0);
+}
+.article:hover {
+  box-shadow: 5px 10px #b39ece;
+}
+.error-msgs {
+  display: none;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  .navbar {
+    background-color: #be631d;
+    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+  }
+}

@@ -1,28 +1,24 @@
-nav{
- height:120px;
- width:100%;
- background-color: #4056A1;
- font-family: 'Bungee', cursive;
- display:flex;
- flex-direction:column;
- padding: 1.5em;
- 
- }
- div{
-  color:#ffffff;
- }
-
-
- .side-container{
-   display:flex;  
-   flex-direction:column;
-   align-items:flex-end;
-   color:#ffffff;
-  
-  
- 
- }
- span{
-  
-   color:#ffffff;
- }
+.navbar {
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  font-family: "Bungee", cursive;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: fixed;
+  top: 0;
+  overflow: unset;
+}
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.side-icon {
+  margin-right: 4rem;
+  color: rgb(153, 15, 15);
+}

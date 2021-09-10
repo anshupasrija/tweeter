@@ -1,13 +1,18 @@
-
-header{
-  height:400px;
-  width:100%;
-  /* background-color: chocolate; */
-  display:flex;
-  flex-direction:column;
+header.banner {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #be631d;
-background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
-
-
+  z-index: 1;
+  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+}
+@media only screen and (min-width: 1024px) {
+  header.banner {
+    width: 40%;
+    height: 30%;
+    margin: 20px;
+    display: flex;
+  }
 }
