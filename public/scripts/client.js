@@ -6,6 +6,7 @@
 
 $(document).ready(function () {
   const createTweetElement = (tweet) => {
+     //create the structure of tweet to be included in the html
     const date = timeago.format(new Date(tweet.created_at));
     const $tweet = `<article class="article-container">
    <header class="article-header">
@@ -30,14 +31,16 @@ $(document).ready(function () {
 
   const renderTweets = (tweets) => {
     const container = $(".tweets");
+      //clear the container before to read all tweets
     container.empty();
     for (const element of tweets) {
+    // tweets in reverse-order (that is, by creation time descending)
       container.prepend(createTweetElement(element));
     }
   };
 
-  // renderTweets(data);
-
+ 
+  //event listener to submit button
   $(".form").submit(function (e) {
     e.preventDefault();
     const textValue = $("#tweet-text").val();
@@ -49,14 +52,16 @@ $(document).ready(function () {
         .slideDown()
         .show();
     } else {
+       //validations are ok, tweet will be send, and show in the area for tweets
       $.ajax({
         type: "POST",
         url: "/tweets",
         data: $(this).serialize(),
         success: (data) => {
-          $("#tweet-text").val("");
-          $(".error-msgs").hide();
-          loadTweets();
+          // emp
+          $("#tweet-text").val(""); //empty the textarea or refreshing            
+          $(".error-msgs").hide();  //hidden the message if it is shown
+          loadTweets(); // Instantly Loads Tweet To Page
         },
         error: (err) => {
           console.log(`errro: ${err}`);
@@ -64,7 +69,7 @@ $(document).ready(function () {
       });
     }
   });
-
+  //function that load tweets from data
   const loadTweets = () => {
     $.ajax({
       url: "/tweets",
