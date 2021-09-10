@@ -26,8 +26,7 @@
   margin-top: 4px;
 }
 
-#new-tweet {
-  /* display: block; */
+#new-tweet { 
   width: 100%;
   justify-content: center;
   background-color: #f4f1ec;
@@ -40,8 +39,7 @@
   font-size: 2rem;
 }
 
-.article-container {
-  /* display: block; */
+.article-container { 
   background-color: #f4f1ec;
   margin: 1rem;
   border: 2px solid black;
@@ -92,7 +90,7 @@
 .footer-right div.footer-icon:hover {
   color: rgb(255, 166, 0);
 }
-.article:hover {
+.article-container:hover {
   box-shadow: 5px 10px #b39ece;
 }
 .error-msgs {
@@ -105,8 +103,7 @@
   word-wrap: break-word;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Write Tablet only CSS here */
-  .navbar {
+   .navbar {
     background-color: #be631d;
     background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
   }

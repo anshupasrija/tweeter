@@ -7,7 +7,7 @@
 $(document).ready(function () {
   const createTweetElement = (tweet) => {
      //create the structure of tweet to be included in the html
-    const date = timeago.format(new Date(tweet.created_at));
+    const date = timeago.format(new Date(tweet.created_at)); // converting the numbers in to date format
     const $tweet = `<article class="article-container">
    <header class="article-header">
      <div class="article-header-subcontainer">
